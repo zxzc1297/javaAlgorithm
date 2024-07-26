@@ -61,4 +61,22 @@ public class Question8 {
         }
         sc.close();
     }
+
+    /**
+     * 강사 풀이
+     */
+    public void solution(){
+        int length = 100;
+        int[] arr = new int[length];
+        int[] answer = new int[length];
+
+        for(int i=0; i<length; i++){
+            int cnt = 1;
+            for(int j=0; j<length; j++){
+                if(arr[i] < arr[j])
+                    cnt++;
+            }
+            answer[i] = cnt;
+        }
+    }
 }
