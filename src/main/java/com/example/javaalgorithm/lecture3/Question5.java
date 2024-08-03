@@ -50,4 +50,20 @@ public class Question5 {
         }
         System.out.print(answer);
     }
+
+    /**
+     * 수학적 접근
+     */
+    public void solution(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int answer = 0;
+        int cnt = 1;
+        while(n>0){
+            cnt++;
+            n=n-cnt;
+            if(n%cnt==0) answer++;
+        }
+        System.out.print(answer);
+    }
 }
